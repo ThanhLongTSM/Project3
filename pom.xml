@@ -14,7 +14,7 @@
     <name>web_sell_fruit</name>
     <description>Website Sell Fruit using Framework Spring Boot</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
     <dependencies>
         <dependency>
