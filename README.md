@@ -1,7 +1,9 @@
 **Website Sell Fruit Using Framework Spring Boot in Java**
 
+Project3
+
 _Running project in locally_
-`Download code:https://github.com/xebeto/BTL_LTNC_20202.git`
+https://github.com/ThanhLongTSM/Project3.git
 
 netstat -ano | findstr 8080
 
