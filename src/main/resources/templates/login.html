@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THATFRUIT Login</title>
+    <link th:href="@{/Frontend/css/login.css}" rel="stylesheet">
+</head>
+<body>
+<div class="div1">
+    <h3 style="font-size: 17px; margin-left: 25px;">Please Sign In</h3>
+
+    <form th:action="@{/login}" method="post">
+        <div class="div2" style="margin-bottom: 20px;">
+            <input class="in1" type="text" name="username" placeholder="Username">
+            <br>
+            <input class="in1" type="password" placeholder="Password" name="password">
+            <br>
+            <input style="margin-left: 25px;" type="checkbox" name="Remember Me" id="remember">
+            <span style="font-size: 14px;">Remember Me</span>
+            <br>
+            <button class="in1 in2" type="submit">Login</button>
+            <br><a th:href="@{/register}"> Click here to Register </a>
+        </div>
+
+    </form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script th:src="@{/Backend/plugins/jquery/jquery.min.js}"></script>
+
+<script th:src="@{/Backend/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+<script th:src="@{/Backend/dist/js/adminlte.min.js}"></script>
+
+</body>
+</html>

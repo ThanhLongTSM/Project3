@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THATFRUIT Register</title>
+    <link rel="stylesheet" href="../Frontend/css/Register.css">
+</head>
+<body>
+<div><p class="login-box-msg" th:text="${status} ? ${status} : 'Vui lòng nhập đầy đủ thông tin' "
+        style="color: red"></p></div>
+
+<form th:action="@{/register}" th:object="${account}" method="post">
+    <div class="div1">
+        <h3 style="font-size: 17px; margin-left: 25px;">Register</h3>
+    </div>
+    <div class="div2" style="margin-bottom: 20px;">
+        <input class="in1"  type="text" th:field="*{username}" placeholder="Username">
+        <label th:text="${errusername}" style="color: #ff0000;"></label>
+        <br>
+        <input class="in1"  type="email" th:field="*{email}" placeholder="E-mail">
+        <label th:text="${erremail}" style="color:red;"></label>
+        <br>
+        <input class="in1" type="password" th:field="*{password}" placeholder="Password">
+        <br>
+        <input class="in1" type="password" placeholder="Re Password">
+        <br>
+        <input class="in1"  type="text" th:field="*{fullname}" placeholder="Họ tên">
+        <input class="in1"  type="number" th:field="*{phone}" placeholder="Số điện thoại">
+        <input class="in1"  type="text" th:field="*{address}" placeholder="Địa chỉ">
+        <input style="margin-left: 25px;" type="checkbox" name="Remember Me" id="Remember Me">
+        <span style="font-size: 14px;">Remember Me</span>
+        <br>
+        <button class="in1 in2" type="submit">Register</button>
+        <br>
+        <a href="/login">Click here to Login</a>
+    </div>
+</form>
+<script src="/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
